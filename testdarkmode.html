@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>TEST</title>
+</head>
+<body>
+    <div id="wrapper">
+  
+        <div id="header">
+          <div class="container">
+            <h1>Header</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            </p>      
+          </div>
+        </div>
+        
+        <div id="content">
+          <div class="container">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            </p>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col box">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <div class="col box">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur.
+              </div>
+              <div class="col box">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer" class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    </div>
+    <style>
+        $bg-color: #fff;
+        $box-color: rgba(0,0,0,0.05);
+        $color1: #ccc;
+        $color2: #999;
+        $color3: #000;
+        
+        :root {
+          --bg-color: #fff;
+          --box-color: rgba(0,0,0,0.05);
+          --color1: #ccc;
+          --color2: #999;
+          --color3: #000;
+        }
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --bg-color: #000;
+            --box-color: rgba(255,255,255,0.15);
+            --color1: #999;
+            --color2: #ccc;
+            --color3: #fff;
+          }
+        }
+        * {
+          box-sizing: border-box;
+        }
+        html,body {
+          width: 100%;
+          height: 100%;
+          padding:0;
+          margin:0;
+          font-family:sans-serif;
+          line-height: 1.7rem;
+          background-color: $bg-color;
+          background-color: var(--bg-color);
+          color:$color3;
+          color:var(--color3);
+        }
+        .box {
+          background-color: $box-color;
+          background-color: var(--box-color);
+        }
+        #wrapper {
+          .container {
+            max-width: 800px;
+            margin: 1rem auto;
+            padding: 1rem 2rem;
+          }
+          #header {
+            background-color: var(--box-color);
+            padding: 1rem 0;
+            h1 {
+              font-size: 3rem;
+            }
+            p {
+              font-size:1.2rem;
+            }
+          }
+          #content {
+            .row {
+              display: flex;
+              justify-content: space-between;
+              .col {
+                width: 100%;
+                padding: 1rem;
+                width: 31%;
+              }
+            }
+          }
+        }
+        
+        #footer {
+          text-align: center;
+          padding: 2rem 0;
+          color: $color2;
+          color: var(--color2);
+        }
+        </style>      
+
+
+
+
+
+
+
+
+</body>
+</html>
